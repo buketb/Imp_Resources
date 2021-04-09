@@ -17,3 +17,14 @@ biological systems in which two spices interact.
 More generally, it could be used to explain any kind of
 relation which are similar to the interaction of a prey and
 predator.
+
+Brander and Taylor (1998) presents a general equilibrium
+model to explain the dynamics of renewable resources and
+population.
+The model is related the Lotka-Volterra predator-prey
+model.
+They models a feast and famine patern of cyclical
+adjustment in population and resource stock in Easter
+Island.
+Brander and Taylor (1998) sets plausible parameter values
+for Easter Island and other civilizations.
