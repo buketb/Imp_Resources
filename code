@@ -26,3 +26,37 @@ function brander_taylor
   
   plot(Xvals, L, 'b', Xvals, S, 'r')
 endfunction
+
+
+
+function xdot = EIdynamics (x, t) 
+
+  k = 12000;
+  alpha = 0.00001; % harvesting productivity
+  beta=0.4; % "taste"
+  r=0.3;%0.003;%0.04 % intrinsic growth rate
+  bminusd=-0.1;
+  phi=4;
+
+  xdot(1) = r*x(1)*(1 - x(1)/k) - alpha*beta*x(1)*x(2); % S
+  xdot(2) = x(2)*(bminusd+phi*alpha*beta*x(1)); % L
+
+endfunction
+
+
+
+
+S0=12000;
+L0=40;
+ 
+x = lsode ("EIdynamics", [S0; L0], (t = linspace (0, 500, 500)'));
+%plot (t, x)
+
+figure(2)
+ plot(t, x(:,2), 'b', "linewidth", 5)
+hold on
+  plot(t, x(:,1), 'r',"linewidth", 5)
+xlabel ("Periods");
+ylabel ("Resource and Population");
+legend ("Population","Resource");
+hold off
