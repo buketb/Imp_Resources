@@ -1,5 +1,7 @@
 # Imp_Resources
 #Matlab/Octave
+
+
 An implication of a dynamic model for the resources. It is the implication of the Brander_and_Taylor Model (Brander and Taylor (1998)), which is also know as an Lotka-Volterra Model.
 
 
@@ -24,7 +26,7 @@ model to explain the dynamics of renewable resources and
 population.
 The model is related the Lotka-Volterra predator-prey
 model.
-They models a feast and famine patern of cyclical
+They models a 'feast and famine' patern of cyclical
 adjustment in population and resource stock in Easter
 Island.
 Brander and Taylor (1998) sets plausible parameter values
