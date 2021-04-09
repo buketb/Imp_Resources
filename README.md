@@ -1,4 +1,5 @@
 # Imp_Resources
+#Matlab/Octave
 An implication of a dynamic model for the resources. It is the implication of the Brander_and_Taylor Model (Brander and Taylor (1998)), which is also know as an Lotka-Volterra Model.
 
 
