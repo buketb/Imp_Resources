@@ -1,0 +1,28 @@
+function brander_taylor
+  %Parameters
+  alpha=0.00001
+  beta=0.4
+  r=0.04
+  bminusd=-0.1
+  fi=4
+  
+  %Number of time steps:
+  N= 200;
+  %initialize:
+  L= zeros(1,N);
+  S= zeros(1,N);
+  L(1)= 40;
+  S(1) = 12000;
+
+  
+  %equations:
+  for n = 2:N
+    L(n) = L(n-1)+L(n-1)*bminusd + fi*alpha*beta*S(n-1)*L(n-1);
+    S(n) = S(n-1)+S(n-1)*r*.2-alpha *beta*L(n-1)*S(n-1);
+  end
+  
+  %plot:
+  Xvals = 1:N;
+  
+  plot(Xvals, L, 'b', Xvals, S, 'r')
+endfunction
